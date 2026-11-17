@@ -2,178 +2,224 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Winnie Davis | Project Coordination, Business Analysis & IT Project Management</title>
-<meta name="description" content="Winnie Davis: project coordination, business analysis and IT project management, with a software development background.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%237a1230'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EW%3C/text%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Winnie Davis | Project Coordination & Business Analysis</title>
+<meta name="description" content="Project coordination, business analysis and IT project delivery case study by Winnie Davis.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif&display=swap">
 <style>
-:root{--bg:#fff;--bg2:#faf4f5;--ink:#1d1517;--mute:#5f5155;--brand:#7a1230;--brand2:#f3e4e8;--on:#fff;--line:#eadde0;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#150d10;--bg2:#1e1317;--ink:#f6eef0;--mute:#bba9ae;--brand:#b83a5d;--brand2:#2c1820;--line:#3a2229}}
-:root[data-theme="dark"]{color-scheme:dark;--bg:#150d10;--bg2:#1e1317;--ink:#f6eef0;--mute:#bba9ae;--brand:#b83a5d;--brand2:#2c1820;--line:#3a2229}
+:root{--bg:#fff;--bg2:#faf4f5;--ink:#1d1517;--mute:#5f5155;--brand:#7a1230;--brand2:#f3e4e8;--line:#eadde0}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
-.w{max-width:1040px;margin:0 auto;padding:0 22px}
-h1,h2,h3{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400;line-height:1.1;margin:0}
-h2{font-size:clamp(32px,4.8vw,42px);margin-bottom:10px}
-section{padding:68px 0;border-top:1px solid var(--line)}
-.alt{background:var(--bg2)}
-.eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);margin-bottom:10px}
-.lead{color:var(--mute);max-width:62ch;margin:0 0 28px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Hanken Grotesk",system-ui,sans-serif}
+.w{max-width:1080px;margin:auto;padding:0 22px}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:1.12;margin:0}
+h1{font-size:clamp(46px,7vw,72px);margin-bottom:14px}
+h2{font-size:clamp(32px,4.5vw,42px);margin-bottom:12px}
+h3{font-size:22px;margin-bottom:8px}
+p{margin:0 0 14px}.muted,.lead{color:var(--mute)}.lead{max-width:68ch;margin-bottom:24px}
 nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
-nav b{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:26px;color:var(--brand)}
-nav a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:500;margin-left:18px}
-nav a:hover{color:var(--brand)}
-.hero{padding:54px 0 76px;border:0}
-.grid2{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
-h1{font-size:clamp(46px,7.5vw,72px);margin-bottom:14px}
-.role{font-weight:600;color:var(--brand);margin-bottom:16px}
-.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px;border:2px solid var(--brand);margin:6px 10px 0 0;cursor:pointer;font-family:inherit}
-.btn.p{background:var(--brand);color:var(--on)}.btn.s{color:var(--brand);background:transparent}
-.btn:hover{opacity:.88}
-.panel{background:var(--brand);color:#fff;border-radius:22px;padding:30px}
-.panel h3{font-size:20px;margin-bottom:14px}
-.panel div{padding:10px 0;border-top:1px solid rgba(255,255,255,.28);font-size:15px}
-.badge{display:inline-block;background:var(--brand2);color:var(--brand);font-size:13px;font-weight:600;padding:6px 14px;border-radius:999px;margin-bottom:18px}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
-.card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 20px;border-left:4px solid var(--brand);font-weight:500}
-.alt .card{background:var(--bg)}
-.proj{background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:30px}
-.proj ul,.tools ul{padding-left:20px;margin:10px 0 0}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 20px}
-.tags span{background:var(--brand2);color:var(--brand);padding:5px 12px;border-radius:999px;font-size:13px;font-weight:600}
-.links>a,.links>span{display:flex;justify-content:space-between;padding:13px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink);font-weight:500}
-.links>a:hover{color:var(--brand)}.links>span{color:var(--mute)}
-.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
-.tools h3{font-size:17px;margin-bottom:4px;color:var(--brand)}
-form{display:grid;gap:12px;max-width:560px}
-input,textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit}
-input:focus,textarea:focus{outline:2px solid var(--brand);outline-offset:1px}
+nav b{font-family:"Instrument Serif",Georgia,serif;font-size:26px;font-weight:400;color:var(--brand)}
+nav a{color:var(--ink);text-decoration:none;font-size:14px;margin-left:16px}
+nav a:hover,.textlink:hover{color:var(--brand)}
+section{padding:64px 0;border-top:1px solid var(--line)}.alt{background:var(--bg2)}
+.hero{padding:58px 0 76px;border:0}.grid2{display:grid;grid-template-columns:1.35fr 1fr;gap:38px;align-items:center}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--brand);margin-bottom:10px}
+.role{font-weight:700;color:var(--brand);margin-bottom:16px}
+.badge{display:inline-block;background:var(--brand2);color:var(--brand);font-size:13px;font-weight:700;padding:6px 13px;border-radius:999px;margin-bottom:18px}
+.btn{display:inline-block;padding:12px 21px;border-radius:999px;font-weight:700;text-decoration:none;font-size:14px;border:1.5px solid var(--brand);margin:6px 9px 0 0}
+.btn.primary{background:var(--brand);color:#fff}.btn.secondary{color:var(--brand)}
+.panel{background:var(--brand);color:#fff;border-radius:20px;padding:26px}
+.panel h3{font-family:"Hanken Grotesk",sans-serif;font-size:17px;font-weight:700}
+.panel div{padding:10px 0;border-top:1px solid rgba(255,255,255,.28)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{font-size:20px;color:var(--brand)}
+.projectbox{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+.tags span{background:var(--brand2);color:var(--brand);padding:5px 11px;border-radius:999px;font-size:12px;font-weight:700}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;counter-reset:step}
+.step{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}
+.step:before{counter-increment:step;content:"0" counter(step);display:block;color:var(--brand);font-weight:700;margin-bottom:8px}
+.flow{display:grid;grid-template-columns:1fr;gap:8px;max-width:760px}
+.flowitem{border:1px solid var(--line);border-radius:12px;padding:14px 18px;background:#fff}
+.flowitem strong{display:block}.flowitem small{color:var(--mute)}
+.branch{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.branch .card{border-top:3px solid var(--brand)}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:14px}
+th,td{padding:12px;border:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--brand2);color:var(--ink)}
+.links a{display:block;padding:12px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
 footer{padding:28px 0;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
-.sr{position:absolute;left:-9999px}
-.wide{overflow-x:auto}
-@media(max-width:760px){.grid2{grid-template-columns:1fr}nav a.h{display:none}section{padding:52px 0}}
+.note{font-size:13px;color:var(--mute);border-left:3px solid var(--brand);padding:10px 14px;background:var(--bg2);margin-top:18px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}nav .navlinks{display:none}section{padding:48px 0}.branch{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="w">
-<nav><b id="logo"></b><div><a class="h" href="#about">About</a><a class="h" href="#project">Project</a><a class="h" href="#toolkit">Toolkit</a><a href="#contact">Contact</a></div></nav>
+<nav><b>Winnie Davis</b><div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#approach">Approach</a><a href="#tools">Tools</a><a href="#contact">Contact</a></div></nav>
 </div>
 
 <header class="hero"><div class="w grid2">
-<div><div class="badge" id="avail"></div><h1 id="name"></h1><div class="role" id="role"></div><p class="lead" id="intro"></p>
-<a class="btn p" href="#contact" id="cta1"></a><a class="btn s" href="#project" id="cta2"></a><a class="btn s" target="_blank" rel="noopener" href="Winnie_Davis_CV_PM_PC.pdf" download>Download CV</a></div>
-<div class="panel"><h3>What I focus on</h3><div id="focus"></div></div>
+<div>
+<div class="badge">Project coordination &amp; business analysis</div>
+<h1>Winnie Davis</h1>
+<div class="role">Project Coordinator | Business Analysis | IT Project Delivery</div>
+<p class="lead">I bring a software development background to project coordination and business analysis. I am interested in understanding business processes, clarifying requirements, organising delivery activities and using technology to make work more structured and efficient.</p>
+<a class="btn primary" href="#projects">View projects</a>
+<!-- <a class="btn secondary" href="NexaPoint_Employee_Onboarding_Final_Case_Study.docx" download>Download NexaPoint case study</a> -->
+<a class="btn secondary" href="https://github.com/Ms-ibiso" target="_blank" rel="noopener">GitHub profile</a>
+<a class="btn secondary" href="Winnie_Davis_CV_PM_PC.pdf" download>Download CV</a>
+</div>
+<div class="panel"><h3>Current areas of focus</h3>
+<div>Project planning and coordination</div><div>Requirements gathering and process analysis</div><div>Risk, issue and dependency management</div><div>Workflow automation and reporting</div>
+</div>
 </div></header>
 
 <section class="alt" id="about"><div class="w">
-<div class="eyebrow">Areas of interest</div><h2>Where I add value</h2><p class="lead" id="about-text"></p>
-<div class="cards" id="areas"></div></div></section>
+<div class="eyebrow">About</div><h2>Technology, processes and delivery</h2>
+<p class="lead">My experience in frontend development has helped me understand how digital products are built and how technical teams work. Through my MSc in Information Technology and practical project simulations, I am developing skills in business analysis, project coordination and IT project delivery.</p>
+<div class="cards">
+<div class="card"><h3>Technical perspective</h3><p class="muted">Understanding software workflows, technical dependencies and communication between business and technical teams.</p></div>
+<div class="card"><h3>Business analysis</h3><p class="muted">Exploring current processes, documenting requirements, identifying gaps and proposing practical improvements.</p></div>
+<div class="card"><h3>Project coordination</h3><p class="muted">Organising tasks, timelines, responsibilities, risks, updates and stakeholder activities.</p></div>
+</div></div></section>
 
-<section id="project"><div class="w">
-<div class="eyebrow">Featured project</div><h2 id="p-title"></h2>
-<div class="proj"><p class="lead" id="p-desc" style="margin-bottom:0"></p><div class="tags" id="p-tags"></div>
-<a class="btn p" id="p-link" target="_blank" rel="noopener" style="margin:0"></a></div></div></section>
-
-<section class="alt" id="toolkit"><div class="w">
-<div class="eyebrow">Toolkit</div><h2>Tools &amp; technologies</h2><br>
-<div class="tools" id="tools"></div></div></section>
-
-<section><div class="w grid2" style="align-items:start">
-<div><div class="eyebrow">Education</div><h2>Learning path</h2><div class="links" id="edu" style="margin-top:14px"></div></div>
-<div><div class="eyebrow">My approach</div><h2>How I work</h2><p class="lead" id="approach" style="margin-top:12px"></p></div>
+<section id="projects" class="alt"><div class="w">
+<div class="eyebrow">Selected projects · Two case studies</div><h2>Project work and practical simulations</h2>
+<p class="lead">These two self-directed projects demonstrate different parts of project coordination and business analysis: planning a proposed digital system, and improving a business process with a working automation prototype.</p>
+<div class="cards">
+<div class="card"><div class="eyebrow">Project 01 · Healthcare technology</div><h3>MediConnect Hospital Management System</h3><p class="muted">A documentation-led simulation for a proposed hospital management system. Focused on defining an MVP, translating operational needs into requirements, and preparing delivery, testing and handover plans.</p><div class="tags"><span>Project Charter</span><span>21 Draft Requirements</span><span>WBS &amp; Gantt</span><span>UAT Planning</span></div><a class="textlink" href="#mediconnect">Explore MediConnect →</a></div>
+<div class="card"><div class="eyebrow">Project 02 · Process improvement</div><h3>NexaPoint Employee Onboarding Process Improvement</h3><p class="muted">A project simulation to improve employee onboarding through stakeholder analysis, a redesigned workflow, Jira planning, risk controls and conditional email automation.</p><div class="tags"><span>Jira</span><span>RACI</span><span>Risk &amp; Issue Logs</span><span>Zapier Automation</span></div><a class="textlink" href="#case-study">Explore NexaPoint →</a></div>
+</div>
+<p class="note">Both projects are self-directed portfolio simulations. They are not presented as live client or organisational implementations.</p>
 </div></section>
 
-<section class="alt" id="contact"><div class="w grid2" style="align-items:start">
-<div><div class="eyebrow">Contact</div><h2 id="c-title"></h2><p class="lead" id="c-text"></p><div id="socials"></div></div>
-<form id="f"><label class="sr" for="n">Name</label><input id="n" name="name" placeholder="Your name" required>
-<label class="sr" for="e">Email</label><input id="e" name="email" type="email" placeholder="Your email" required>
-<label class="sr" for="m">Message</label><textarea id="m" name="message" rows="5" placeholder="How can I help?" required></textarea>
-<button class="btn p" type="submit" style="margin:0">Send message</button><div id="st" role="status" style="color:var(--mute);font-size:14px"></div></form>
+<section id="mediconnect"><div class="w">
+<div class="eyebrow">Project 01 · Healthcare technology · Fictional project simulation</div>
+<h2>MediConnect Hospital Management System</h2>
+<p class="lead">A proposed web-based hospital management system designed around a scenario in which paper-based records and manual administrative processes create delays in patient registration, appointment handling, medical-record retrieval and billing.</p>
+<div class="projectbox">
+<div class="tags"><span>Project Coordination</span><span>Business Analysis</span><span>Requirements</span><span>Scope Management</span><span>UAT Planning</span></div>
+<div class="cards">
+<div class="card"><h3>Problem</h3><p class="muted">The scenario assumed fragmented paper records, slow file retrieval, manual appointment administration, billing-entry errors and limited information sharing between departments.</p></div>
+<div class="card"><h3>Proposed solution</h3><p class="muted">Plan an MVP covering patient registration and profiles, appointments, authorised medical-record access, billing, role-based accounts and management reporting.</p></div>
+<div class="card"><h3>My role</h3><p class="muted">Project Coordinator / Business Analyst: project charter, requirements drafting, MoSCoW prioritisation, WBS, schedule planning, status reporting, risk and issue management, UAT and handover preparation.</p></div>
+</div>
+<h3 style="margin-top:24px">Key deliverables</h3>
+<div class="cards">
+<div class="card">Project charter and scope definition</div><div class="card">Business Requirements Document with 21 draft functional requirements</div><div class="card">MoSCoW prioritisation and Work Breakdown Structure</div><div class="card">Excel Gantt chart and dependency planning</div><div class="card">Weekly status report templates</div><div class="card">Risk register and issue log</div><div class="card">UAT plan and sign-off template</div><div class="card">Deployment, training, handover and closure documentation</div>
+</div>
+<p class="note"><strong>Project status and limitation:</strong> This was a documentation-led simulation. No hospital client discovery, software build, live data, testing execution, production deployment or formal sponsor acceptance took place. The proposed schedule also contained a duration discrepancy that was recorded for reconciliation rather than presented as resolved.</p>
+<a class="btn secondary" href="MediConnect_Portfolio_Case_Study.docx" download>Download MediConnect case study</a>
+<a class="btn secondary" href="https://github.com/Ms-ibiso/mediconnect-hospital-management-system" target="_blank">View project on GitHub →</a>
+</div>
 </div></section>
 
-<footer><div class="w" id="foot"></div></footer>
+<section id="case-study"><div class="w">
+<div class="eyebrow">Project 02 · Featured case study · Fictional project simulation</div>
+<h2>NexaPoint Employee Onboarding Process Improvement</h2>
+<p class="lead">A self-directed project simulation exploring how a growing technology-services company could improve its employee onboarding process, clarify departmental responsibilities and reduce avoidable delays through a structured workflow and notification automation.</p>
+<div class="projectbox">
+<div class="tags"><span>Project Coordination</span><span>Business Analysis</span><span>Process Improvement</span><span>Jira</span><span>Zapier</span><span>Google Workspace</span></div>
+<div class="cards">
+<div class="card"><h3>Problem</h3><p class="muted">The proposed current-state scenario included late employee documents, unclear ownership, delayed equipment and system access, and inconsistent orientation activities.</p></div>
+<div class="card"><h3>Solution</h3><p class="muted">Design a structured onboarding process beginning at offer acceptance, with clear task ownership, earlier departmental involvement, milestones and monitoring.</p></div>
+<div class="card"><h3>My role</h3><p class="muted">Project Coordinator / Business Analyst: process discovery, requirements, analysis, planning, coordination design, risk tracking and automation prototype.</p></div>
+<a class="btn secondary" href="NexaPoint_Employee_Onboarding_Final_Case_Study.docx" download>Download NexaPoint case study</a>
+<a class="btn secondary" href="https://github.com/Ms-ibiso/NEXAPOINT-EMPLOYEE-ONBOARDING-PROCESS-IMPROVEMENT" target="_blank">View project on GitHub →</a>
 
-<script>
-/* ============ EDIT YOUR CONTENT HERE ============ */
-const C = {
-  name: "Winnie Davis",
-  role: "Project Coordination | Business Analysis | IT Project Management",
-  availability: "Open to project coordination and business analysis opportunities",
-  intro: "I have a background in software development and a growing focus on project coordination, business analysis and IT project delivery. I’m interested in how projects move from an initial idea to a clearly defined plan and, ultimately, a successful outcome.",
-  cta1: "Work with me", cta2: "See my project",
-  focus: ["Project Coordination", "Business Analysis", "IT Project Management"],
-  about: "My experience in technology has given me an understanding of how digital products are designed and developed, while my current MSc in Information Technology is building my understanding of IT systems, business processes and project delivery.",
-  areas: [
-    "Project Coordination and Project Management", "Business Requirements and Documentation",
-    "Requirements Gathering and Analysis", "Work Breakdown Structures (WBS)",
-    "Project Scheduling and Tracking", "Risk and Issue Management",
-    "Stakeholder Communication", "User Acceptance Testing (UAT)", "Process Improvement and IT Systems"
-  ],
-  project: {
-    title: "MediConnect Hospital Management System",
-    description: "A self-directed IT project simulation for a proposed hospital management system, covering project planning, requirements documentation, risk management, stakeholder coordination and implementation planning.",
-    tags: ["Project Planning", "Requirements Documentation", "Risk Management", "Stakeholder Coordination", "Implementation Planning"],
-    githubUrl: "https://github.com/Ms-ibiso/mediconnect-hospital-management-system",
-    githubLabel: "View project on GitHub →"
-  },
-  tools: {
-    "Project Management": ["Jira", "Trello", "Microsoft Project"],
-    "Documentation": ["Microsoft Word", "Excel", "Google Workspace"],
-    "Process Mapping": ["Draw.io"],
-    "Reporting & Analysis": ["Excel", "Power BI"],
-    "Technical Background": ["React", "Next.js", "JavaScript", "TypeScript"]
-  },
-  education: [
-    { label: "MSc Information Technology", sub: "MIVA Open University" },
-    { label: "BSc Microbiology", sub: "University of Port Harcourt" }
-  ],
-  approach: "I value clear communication, structured planning, proper documentation and practical problem-solving. I enjoy understanding how systems work, identifying gaps in processes and helping organise the activities needed to move a project forward. I’m using this space to document my project work, practical exercises and learning in project coordination and business analysis.",
-  contactTitle: "Let’s talk",
-  contactText: "Have a project, role or collaboration in mind? Send a message and I’ll get back to you.",
-  email: "Davisbeulah07@gmail.com",
-  formEndpoint: "",   // optional: paste a Formspree URL (https://formspree.io/f/xxxx). Empty = opens your email app.
-  socials: [          // leave url empty to hide
-    { label: "LinkedIn", url: "https://linkedin.com/in/winnie-davis-1aa069246" },
-    { label: "GitHub", url: "https://github.com/Ms-ibiso" }
-  ]
-};
-/* ============ END OF EDITABLE CONTENT ============ */
+</div>
+</div>
+</div></section>
 
-const $ = id => document.getElementById(id);
-const first = C.name.split(" ")[0];
-document.title = C.name + " | " + C.role.replace(/ \| /g, ", ");
-$("logo").textContent = C.name; $("name").textContent = C.name; $("role").textContent = C.role;
-$("avail").textContent = C.availability; $("intro").textContent = C.intro;
-$("cta1").textContent = C.cta1; $("cta2").textContent = C.cta2;
-$("focus").innerHTML = C.focus.map(x => "<div>" + x + "</div>").join("");
-$("about-text").textContent = C.about;
-$("areas").innerHTML = C.areas.map(x => '<div class="card">' + x + "</div>").join("");
-$("p-title").textContent = C.project.title; $("p-desc").textContent = C.project.description;
-$("p-tags").innerHTML = C.project.tags.map(x => "<span>" + x + "</span>").join("");
-$("p-link").href = C.project.githubUrl; $("p-link").textContent = C.project.githubLabel;
-$("tools").innerHTML = Object.entries(C.tools).map(([k, v]) => "<div><h3>" + k + "</h3><div>" + v.join(", ") + "</div></div>").join("");
-$("edu").innerHTML = C.education.map(e => "<span><span>" + e.label + "</span><span>" + e.sub + "</span></span>").join("");
-$("approach").textContent = C.approach;
-$("c-title").textContent = C.contactTitle; $("c-text").textContent = C.contactText;
-$("socials").innerHTML = '<a class="btn s" href="mailto:' + C.email + '">' + C.email + "</a>" +
-  C.socials.filter(s => s.url).map(s => '<a class="btn s" target="_blank" rel="noopener" href="' + s.url + '">' + s.label + "</a>").join("");
-$("foot").textContent = "© " + new Date().getFullYear() + " " + C.name + ". All rights reserved.";
+<section class="alt"><div class="w">
+<div class="eyebrow">Project method</div><h2>From process discovery to delivery planning</h2>
+<p class="lead">The project was organised into practical stages so that the proposed solution was based on an understanding of the process rather than jumping straight to a tool.</p>
+<div class="steps">
+<div class="step"><h3>Discover</h3><p class="muted">Identify stakeholders, ask discovery questions and document the proposed AS-IS process.</p></div>
+<div class="step"><h3>Analyse</h3><p class="muted">Identify process gaps, likely root causes, impacts and improvement opportunities.</p></div>
+<div class="step"><h3>Design</h3><p class="muted">Develop the TO-BE workflow, define handoffs and clarify departmental responsibilities.</p></div>
+<div class="step"><h3>Plan</h3><p class="muted">Create a six-week schedule, task breakdown, dependencies, RACI matrix and risk/issue controls.</p></div>
+<div class="step"><h3>Prototype</h3><p class="muted">Build and test a form-to-email automation with conditional notifications.</p></div>
+<div class="step"><h3>Monitor</h3><p class="muted">Define progress reporting, milestone checks, pilot measures and handover activities.</p></div>
+</div>
+</div></section>
 
-$("f").addEventListener("submit", async e => {
-  e.preventDefault();
-  const d = Object.fromEntries(new FormData(e.target));
-  if (C.formEndpoint) {
-    try {
-      const r = await fetch(C.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(d) });
-      if (r.ok) { $("st").textContent = "Thanks, " + d.name + ". I’ll be in touch soon."; e.target.reset(); return; }
-    } catch (_) {}
-  }
-  location.href = "mailto:" + C.email + "?subject=" + encodeURIComponent("Enquiry from " + d.name) +
-    "&body=" + encodeURIComponent(d.message + "\n\n" + d.name + " (" + d.email + ")");
-});
-</script>
+<section><div class="w">
+<div class="eyebrow">Automation prototype</div><h2>Automating onboarding notifications</h2>
+<p class="lead">A working Zapier demonstration connects a Google Form to Gmail. Google Forms records submissions in its linked Google Sheet, while Zapier routes notifications according to the employee's equipment and system-access requirements.</p>
+<div class="flow">
+<div class="flowitem"><strong>1. Google Forms — New Form Response</strong><small>HR submits employee details and onboarding requirements.</small></div>
+<div class="flowitem"><strong>2. Google Sheets — response record</strong><small>Google Forms automatically stores the submitted response in the linked spreadsheet.</small></div>
+<div class="flowitem"><strong>3. Gmail — HR notification</strong><small>An acknowledgement/notification is sent for every new submission.</small></div>
+<div class="flowitem"><strong>4. Paths by Zapier — conditional routing</strong><small>Branch conditions determine whether IT and Procurement receive additional notifications.</small></div>
+</div>
+<div class="branch" style="margin-top:14px">
+<div class="card"><h3>HR</h3><p class="muted">Receives every onboarding request.</p></div>
+<div class="card"><h3>IT</h3><p class="muted">Receives a notification when equipment OR system access is required.</p></div>
+<div class="card"><h3>Procurement</h3><p class="muted">Receives a notification when equipment is required.</p></div>
+</div>
+<div class="note"><strong>Testing note:</strong> The Zapier trigger and email actions were tested using fictional form entries. The user's own Gmail address was used to simulate departmental recipients. This is a demonstration workflow, not a live deployment inside NexaPoint or a real employer.</div>
+</div></section>
+
+<section class="alt" id="approach"><div class="w">
+<div class="eyebrow">Methods &amp; controls</div><h2>How NEXAPOINT project was structured</h2>
+<div class="cards">
+<div class="card"><h3>Process analysis</h3><p class="muted">AS-IS and TO-BE process mapping, gap analysis and root-cause exploration.</p></div>
+<div class="card"><h3>Requirements</h3><p class="muted">Stakeholder discovery, requirements documentation and workflow definition.</p></div>
+<div class="card"><h3>Planning</h3><p class="muted">Work breakdown, six-week schedule, milestones, task dependencies and Jira tracking.</p></div>
+<div class="card"><h3>Governance</h3><p class="muted">RACI responsibility matrix, stakeholder communication and decision/approval points.</p></div>
+<div class="card"><h3>Risk &amp; issue management</h3><p class="muted">Likelihood-impact scoring, mitigation, contingency planning, issue ownership and escalation.</p></div>
+<div class="card"><h3>Monitoring &amp; evaluation</h3><p class="muted">Progress updates, milestone tracking, proposed measures and pilot review.</p></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<div class="eyebrow">Project toolkit</div><h2>Tools used in NEXAPOINT simulation</h2>
+<div class="cards">
+<div class="card"><h3>Jira</h3><p class="muted">Epic, tasks, workflow statuses, timeline, dates and dependencies.</p></div>
+<div class="card"><h3>Google Forms &amp; Sheets</h3><p class="muted">Employee onboarding request capture and response tracking.</p></div>
+<div class="card"><h3>Zapier &amp; Gmail</h3><p class="muted">Trigger-based email notifications and conditional departmental routing.</p></div>
+<div class="card"><h3>Excel</h3><p class="muted">Project tracker, schedule, Gantt view, milestones, dependencies, resources, baseline and risk/issue logs.</p></div>
+<div class="card"><h3>Word / Google Docs</h3><p class="muted">Project brief, stakeholder notes, requirements, process analysis and implementation documentation.</p></div>
+<div class="card"><h3>Draw.io</h3><p class="muted">Process flow diagrams and workflow communication.</p></div>
+</div>
+</div></section>
+
+<section class="alt"><div class="w">
+<div class="eyebrow">Deliverables</div><h2>What NEXAPOINT project produced</h2>
+<div class="cards">
+<div class="card">Project brief and success measures</div>
+<div class="card">Stakeholder register and discovery questions</div>
+<div class="card">AS-IS process and gap/root-cause analysis</div>
+<div class="card">TO-BE process design</div>
+<div class="card">Six-week implementation plan and schedule</div>
+<div class="card">RACI matrix, risk register and issue log</div>
+<div class="card">Jira project board and timeline</div>
+<div class="card">Excel project tracker and Gantt workbook</div>
+<div class="card">Zapier automation prototype and test scenarios</div>
+</div>
+<p class="note">The project plan and proposed success measures describe intended future work. No real employee onboarding was carried out, and no actual operational improvement or percentage reduction has been claimed.</p>
+</div></section>
+
+<section id="tools"><div class="w">
+<div class="eyebrow">Education &amp; development</div><h2>Learning path</h2>
+<div class="cards">
+<div class="card"><h3>MSc Information Technology</h3><p class="muted">MIVA Open University · In progress</p></div>
+<div class="card"><h3>BSc Microbiology</h3><p class="muted">University of Port Harcourt</p></div>
+</div>
+<p class="lead" style="margin-top:22px">My approach is to understand the problem, document the process, involve the right stakeholders, make responsibilities visible and use appropriate tools to support delivery.</p>
+</div></section>
+
+<section class="alt" id="contact"><div class="w grid2">
+<div><div class="eyebrow">Contact</div><h2>Let's connect</h2><p class="lead">I am interested in project coordination, project support, business analysis and IT delivery opportunities.</p>
+<a class="btn primary" href="mailto:Davisbeulah07@gmail.com">Email me</a>
+<a class="btn secondary" href="https://linkedin.com/in/winnie-davis-1aa069246" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn secondary" href="https://github.com/Ms-ibiso" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div></section>
+
+<footer><div class="w">© 2026 Winnie Davis. MediConnect and NexaPoint are fictional project simulations created for portfolio and learning purposes.</div></footer>
 </body>
 </html>
