@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NexaPoint2.0 | Winnie Davis</title>
+<meta name="description" content="NexaPoint2.0 business operations workflow automation project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="top"><div class="w"><nav aria-label="Main">
+<a class="brand" href="index.html">Winnie Davis</a>
+<ul><li><a href="index.html">Home</a></li><li><a href="mediconnect.html">MediConnect</a></li><li><a href="nexapoint.html">NexaPoint</a></li><li><a href="automation-projects.html" aria-current="page">Automation</a></li></ul>
+</nav></div></header>
+<main id="main">
+<div class="w bc"><a href="automation-projects.html">← All automation projects</a></div>
+<section class="hero" style="padding-top:24px"><div class="w">
+<p class="eyebrow">Automation project · NexaPoint series · Version 2.0</p>
+<h1>NexaPoint2.0: Business Operations Automation</h1>
+<p class="lead">A practical request-management workflow connecting form submissions, tracking, notifications, AI-assisted summaries, escalation and reporting.</p>
+<ul class="tags"><li>Google Forms</li><li>Google Sheets</li><li>Google Apps Script</li><li>Gemini API</li><li>Gmail</li></ul>
+<a class="btn p" href="NexaPoint2_0_Project_Case_Study.docx" download>Download NexaPoint2.0 case study</a>
+<a class="btn s" href="automation-projects.html">← Back to automation projects</a>
+</div></section>
+<section class="alt"><div class="w">
+<h2>The problem</h2>
+<p>Internal requests can arrive through different channels, making it difficult to track ownership, status and deadlines. Coordinators may also spend time acknowledging submissions, sending updates and following up on delayed work.</p>
+<p>NexaPoint2.0 brings these steps into a clearer process. The aim is to reduce repetitive administration and make request progress easier to see, while keeping operational decisions with the coordinator.</p>
+</div></section>
+<section><div class="w">
+<h2>How the workflow runs</h2>
+<ol class="steps">
+<li><strong>Google Forms: request submission</strong>A requester enters their details, request information, priority and preferred completion date.</li>
+<li><strong>Apps Script: request registration</strong>The submission is processed, assigned a unique request ID and added to the Requests register in Google Sheets.</li>
+<li><strong>Gmail: automatic notifications</strong>The requester receives a confirmation and the coordinator receives a new-request notification.</li>
+<li><strong>Gemini API: AI-assisted analysis</strong>Gemini creates a short summary and suggests a possible next action. The output is saved against the request.</li>
+<li><strong>Coordinator: review and status updates</strong>The coordinator manages the request. Status changes trigger updates to both the requester and coordinator.</li>
+<li><strong>Apps Script: monitoring and escalation</strong>Deadline tracking identifies overdue requests, while scheduled logic checks unresolved requests against configured escalation rules.</li>
+<li><strong>Google Sheets: operational dashboard</strong>The dashboard presents request totals, status figures, overdue and escalated items, and departmental workload.</li>
+</ol>
+</div></section>
+<section class="alt"><div class="w">
+<h2>Workflow at a glance</h2>
+<figure>
+<img src="images/nexapoint2-workflow.png" alt="Hand-drawn NexaPoint2.0 workflow showing request submission, tracking and analysis, requester and coordinator notifications, overdue escalation and dashboard reporting.">
+<figcaption class="note">A simple view of the main request flow and the automation added during this stage.</figcaption>
+</figure>
+</div></section>
+<section><div class="w">
+<h2>What the system handles</h2>
+<div class="tablewrap"><table><caption class="sr">NexaPoint2.0 features and purpose</caption>
+<thead><tr><th scope="col">Feature</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr><th scope="row">Request registration</th><td>Stores new requests in a structured register and assigns a unique ID.</td></tr>
+<tr><th scope="row">Email notifications</th><td>Sends submission confirmations and status updates to requester and coordinator.</td></tr>
+<tr><th scope="row">AI-assisted analysis</th><td>Creates a short summary and suggested next action for coordinator review.</td></tr>
+<tr><th scope="row">Status and activity tracking</th><td>Tracks operational changes and records key activity in an activity log.</td></tr>
+<tr><th scope="row">Overdue monitoring</th><td>Uses request deadlines and status to identify overdue work.</td></tr>
+<tr><th scope="row">Escalation</th><td>Checks eligible unresolved requests and can notify the coordinator.</td></tr>
+<tr><th scope="row">Dashboard</th><td>Shows request totals, status, overdue items, escalations and departmental workload.</td></tr>
+</tbody></table></div>
+</div></section>
+<section class="alt"><div class="w">
+<h2>Technology and design choices</h2>
+<ul class="list">
+<li><strong>Google Forms</strong> provides a consistent request intake point.</li>
+<li><strong>Google Sheets</strong> acts as the initial operations register and reporting layer.</li>
+<li><strong>Google Apps Script</strong> connects the steps and applies workflow rules.</li>
+<li><strong>Gemini API</strong> supports request understanding with summaries and recommendations.</li>
+<li><strong>Gmail</strong> handles automated communication.</li>
+</ul>
+<p><strong>Human oversight:</strong> AI does not approve, reject or make management decisions. The coordinator remains responsible for review, assignment, prioritisation and outcomes.</p>
+</div></section>
+<section><div class="w">
+<h2>Build notes and testing</h2>
+<p>During testing, I found that some new submissions were being written thousands of rows below the existing records. I corrected the registration logic so it finds the next available row using the Request ID column.</p>
+<p>Form submission, request registration, email notifications, Gemini analysis, status updates and dashboard setup have been exercised during development. The escalation logic is implemented; a controlled test of the escalation email and a full end-to-end validation remain part of final verification.</p>
+<p class="note"><strong>Project context:</strong> NexaPoint is a fictional business operations simulation created for portfolio and learning purposes. It is not presented as a live employer deployment.</p>
+</div></section>
+<section class="alt"><div class="w">
+<h2>My contribution</h2>
+<p>I worked on the process design, request data structure, Apps Script automation, Gemini integration, notification logic, escalation rules, dashboard setup and troubleshooting. The project helped me practise translating an operational process into workflow steps, testing automation and improving it when issues appeared in use.</p>
+<div class="pn"><a class="btn s" href="nexapoint.html">← NexaPoint project</a><a class="btn s" href="automation-projects.html">All automation projects →</a></div>
+</div></section>
+<!-- DEMO VIDEO: to switch on, delete the comment markers around this block and replace VIDEO_ID with your YouTube (unlisted) video ID.
+<section class="alt"><div class="w"><h2>Watch the demo</h2>
+<div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="NexaPoint2.0 screen recording demo" loading="lazy" allowfullscreen></iframe></div>
+<p class="note">Screen recording using fictional test data. Captions are available in the video player.</p></div></section>
+-->
+<section id="contact"><div class="w">
+<h2>Let's connect</h2>
+<p class="lead">I am interested in project coordination, project support, business analysis and IT delivery opportunities.</p>
+<a class="btn p" href="mailto:Davisbeulah07@gmail.com">Email me</a>
+<a class="btn s" href="https://linkedin.com/in/winnie-davis-1aa069246" target="_blank" rel="noopener">LinkedIn<span class="sr"> (opens in new tab)</span></a>
+<a class="btn s" href="https://github.com/Ms-ibiso" target="_blank" rel="noopener">GitHub<span class="sr"> (opens in new tab)</span></a>
+<a class="btn s" href="Winnie_Davis_CV_PM_PC.pdf" download>Download CV</a>
+</div></section>
+</main>
+<footer><div class="w">© 2026 Winnie Davis. NexaPoint is a fictional project simulation created for portfolio and learning purposes.</div></footer>
+</body></html>
